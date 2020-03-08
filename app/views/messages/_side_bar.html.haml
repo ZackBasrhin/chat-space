@@ -1,23 +1,19 @@
-.side-header
-  .side-header__box
-    .side-header__box__user-name
-      = current_user.name
-    .side-header__box__menu
-      = link_to edit_user_path(current_user) do
-        %i.fa.fa-cog.fa-pull-right
-      = link_to "#" do
-        %i.fa.fa-edit.fa-pull-right
+.side-bar
+  .side-header
+    .side-header__box
+      .side-header__box__user-name
+        = current_user.name
+      .side-header__box__menu
+        = link_to edit_user_path(current_user) do
+          %i.fa.fa-cog.fa-pull-right
+        = link_to new_group_path do
+          %i.fa.fa-edit.fa-pull-right
 
-.groups
-  = link_to "#" do
-    .group
-      .group__name
-        TECH::EXPERT
-      .group__message
-        まだメッセージがありません
-  = link_to "#" do
-    .group
-      .group__name
-        TECH CAMP
-      .group__message
-        まだメッセージがありません
+  .groups
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。

@@ -1,33 +1,34 @@
-.main-header
-  .main-header__left-box
-    .main-header__left-box__group-name
-      TECH::EXPERT
-    .main-header__left-box__member
-      Member : qwerty asdfgh zxcvbn
-  = link_to "Edit", "#", class:"edit-btn"
-.messages
-  .message
-    .message__header
-      .message__header__user-name
-        qwerty
-      .message__header__time
-        2020/3/6(Fri) 20:20:20
-    .message__content
-      fooooooooooo!
-  .message
-    .message__header
-      .message__header__user-name
-        asdfgh
-      .message__header__time
-        2020/3/6(Fri) 20:20:20
-    .message__content
-      yeahhhhhhhhh!
-.form
-  %form.message-form
-    .message-form__box
-      .message-form__box__input
-        %input.input-box__text{type: "text", name: "message", placeholder: "type a message"}
-      %label.message-form__box__img
-        %i.far.fa-image
-        %input.input-box__img{type: "file", name: "image", style: "display:none;"}
-    %input.send-btn{type: "submit", value: "Send"}
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__group-name
+        TECH::EXPERT
+      .main-header__left-box__member
+        Member : qwerty asdfgh zxcvbn
+    = link_to "Edit", "#", class:"edit-btn"
+  .messages
+    .message
+      .message__header
+        .message__header__user-name
+          qwerty
+        .message__header__time
+          2020/3/6(Fri) 20:20:20
+      .message__content
+        fooooooooooo!
+    .message
+      .message__header
+        .message__header__user-name
+          asdfgh
+        .message__header__time
+          2020/3/6(Fri) 20:20:20
+      .message__content
+        yeahhhhhhhhh!
+  .form
+    %form.message-form
+      .message-form__box
+        .message-form__box__input
+          %input.input-box__text{type: "text", name: "message", placeholder: "type a message"}
+        %label.message-form__box__img
+          %i.far.fa-image
+          %input.input-box__img{type: "file", name: "image", style: "display:none;"}
+      %input.send-btn{type: "submit", value: "Send"}
