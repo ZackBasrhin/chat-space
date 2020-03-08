@@ -1,9 +1,9 @@
 .side-header
   .side-header__box
     .side-header__box__user-name
-      qwerty
+      = current_user.name
     .side-header__box__menu
-      = link_to "#" do
+      = link_to edit_user_path(current_user) do
         %i.fa.fa-cog.fa-pull-right
       = link_to "#" do
         %i.fa.fa-edit.fa-pull-right

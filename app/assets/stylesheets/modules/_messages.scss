@@ -1,12 +1,9 @@
-$buttonColor: #38aef0;
-$mainWhite: #fff;
-
 * {
   box-sizing: border-box;
 }
 a {
   text-decoration: none;
-  color: $mainWhite;
+  color: $white;
 }
 
 .wrapper {
@@ -27,7 +24,7 @@ a {
         display: flex;
         justify-content: space-between;
         line-height: 20px;
-        color: $mainWhite;
+        color: $white;
         &__user-name {
           font-size: 16px;
           font-weight: bold;
@@ -49,7 +46,7 @@ a {
       height: calc(100vh - 100px);
       padding: 20px;
       .group {
-        color: $mainWhite;
+        color: $white;
         font-weight: bold;
         margin-bottom: 40px;
         &__name {
@@ -66,7 +63,7 @@ a {
     width: calc(100vw - 300px);
     .main-header {
       height: 99px;
-      background-color: $mainWhite;
+      background-color: $white;
       border-bottom: 1px solid #eee;
       display: flex;
       justify-content: space-between;
@@ -87,8 +84,8 @@ a {
         height: 40px;
         width: 72px;
         font-size: 16px;
-        border: 1px solid $buttonColor;
-        color: $buttonColor;
+        border: 1px solid $light_blue;
+        color: $light_blue;
         margin: 30px 0;
         text-align: center;
         line-height: 40px;
@@ -150,8 +147,8 @@ a {
           width: 100px;
           padding: 0 30px;
           margin-left: 15px;
-          background-color: $buttonColor;
-          color: $mainWhite;
+          background-color: $light_blue;
+          color: $white;
           cursor: pointer;
         }
       }
