@@ -6,6 +6,10 @@ a {
   color: $white;
 }
 
+.hidden {
+  display: none;
+}
+
 .wrapper {
   height: 100vh;
   width: 100vw;
@@ -33,8 +37,6 @@ a {
         &__menu {
           width: 60px;
           text-align: right;
-          .far.fa-edit {
-          }
           .fa.fa-cog {
             display: block;
             margin-left: 5px;
@@ -124,16 +126,13 @@ a {
         display: flex;
         &__box {
           display: flex;
-          position: relative;
           width: 100%;
-          &__input {
+          position: relative;
+          &__input {            
+            height: 50px;
             width: 100%;
-            .input-box__text {
-              height: 50px;
-              width: 100%;
-              padding:0 40px 0 10px;
-              border-style: none;
-            }
+            padding:0 40px 0 10px;
+            border-style: none;
           }  
           &__img {
             position: absolute;
